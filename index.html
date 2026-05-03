@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Junior Web Developer portfolio — Full-stack JavaScript developer skilled in HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React. Open to junior-to-mid developer roles." />
+  <meta name="keywords" content="web developer, junior developer, JavaScript, Node.js, React, MongoDB, Kenya, portfolio" />
+  <meta property="og:title" content="Kelvin Ngatia | Junior Web Developer Portfolio" />
+  <meta property="og:description" content="Full-stack JavaScript developer. Built real-world apps including a community reporting platform for Kenyan citizens." />
+  <meta property="og:type" content="website" />
+  <title>Kelvin Ngatia | Junior Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">&lt;Ngatia259-dev /&gt;</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#capstone">Capstone</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta" style="padding:0.5rem 1.2rem;font-size:0.85rem;">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MOBILE NAV ===== -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+  <a href="#about"    onclick="closeMobile()">About</a>
+  <a href="#skills"   onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#capstone" onclick="closeMobile()">Capstone</a>
+  <a href="#contact"  onclick="closeMobile()">Contact</a>
+  <a href="#contact"  onclick="closeMobile()" class="btn btn-primary" style="margin-top:1rem;">Hire Me</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Text -->
+      <div class="hero-text fade-up">
+        <div class="hero-tag">
+          <span></span>
+          Available for junior-to-mid roles
+        </div>
+        <h1 class="hero-title">
+          Building things<br>
+          for the <em>web</em> that<br>
+          actually matter.
+        </h1>
+        <p class="hero-desc">
+          Full-stack JavaScript developer. I build responsive, accessible, and
+          performance-conscious web applications — from clean front-ends to
+          REST APIs backed by real databases.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary" id="hero-view-work">View My Work</a>
+          <a href="#contact" class="btn btn-outline" id="hero-contact">Let's Talk</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">12</div>
+            <div class="stat-label">Weeks Training</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">Full</div>
+            <div class="stat-label">Stack Exposure</div>
+          </div>
+        </div>
+      </div>
+      <!-- Visual -->
+      <div class="hero-visual fade-up" style="transition-delay:0.2s">
+        <div class="avatar-wrap">
+          <div class="avatar-ring" aria-hidden="true"></div>
+          <img src="assets/avatar.png" alt="Developer portrait" class="avatar-img" width="300" height="300" />
+          <div class="floating-badge b1">
+            <span class="badge-dot green"></span>
+            Open to Work
+          </div>
+          <div class="floating-badge b2">
+            <span class="badge-dot cyan"></span>
+            Node.js + React
+          </div>
+          <div class="floating-badge b3">
+            <span class="badge-dot violet"></span>
+            Nairobi, Kenya 🇰🇪
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-up">
+        <p class="section-label">Who I Am</p>
+        <h2 id="about-heading" class="section-title">A developer who understands the <span class="highlight">full picture</span></h2>
+        <p style="margin-bottom:1.2rem;">
+          I completed an intensive 12-week web development program where I went from zero to building multi-tier,
+          database-connected web applications. I understand how things connect — browser to server to database —
+          and I care about writing code that's readable, maintainable, and works for real users.
+        </p>
+        <p>
+          My background drives me to build technology that solves problems people actually face — like the
+          Community Hub platform I co-developed to give Kenyan citizens a voice on neighborhood issues.
+        </p>
+        <ul class="about-list" aria-label="Core values">
+          <li>Write clean, well-structured, and documented code</li>
+          <li>Collaborate effectively using Git workflows and code reviews</li>
+          <li>Think through UX — not just logic — when building features</li>
+          <li>Commit to continuous learning and staying current</li>
+          <li>Deliver on real deadlines in team environments</li>
+        </ul>
+      </div>
+      <div class="fade-up" style="transition-delay:0.15s">
+        <div class="about-card">
+          <h3 style="color:var(--cyan);margin-bottom:0.3rem;">Quick Facts</h3>
+          <p style="font-size:0.9rem;margin-bottom:0;color:var(--grey);">A snapshot of my background and focus areas.</p>
+          <div class="about-info">
+            <div class="info-chip">
+              <div class="label">Location</div>
+              <div class="value">Nairobi, Kenya 🇰🇪</div>
+            </div>
+            <div class="info-chip">
+              <div class="label">Focus</div>
+              <div class="value">Full-Stack JS</div>
+            </div>
+            <div class="info-chip">
+              <div class="label">Training</div>
+              <div class="value">12-Week Intensive</div>
+            </div>
+            <div class="info-chip">
+              <div class="label">Status</div>
+              <div class="value" style="color:#4ade80;">✓ Open to Roles</div>
+            </div>
+            <div class="info-chip">
+              <div class="label">Preferred Stack</div>
+              <div class="value">MERN</div>
+            </div>
+            <div class="info-chip">
+              <div class="label">Work Type</div>
+              <div class="value">Remote / Hybrid</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" aria-labelledby="skills-heading">
+  <div class="container">
+    <p class="section-label">What I Work With</p>
+    <h2 id="skills-heading" class="section-title">Skills &amp; <span class="highlight">Technologies</span></h2>
+    <p class="section-subtitle">
+      Built over 12 weeks of hands-on, project-driven training — each technology used in context, not just learned in theory.
+    </p>
+    <div class="skills-grid">
+
+      <div class="skill-card fade-up">
+        <span class="skill-icon">🏗️</span>
+        <h3>Core Web Foundations</h3>
+        <div class="skill-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">Semantic HTML</span>
+          <span class="tag">Accessibility</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Flexbox</span>
+          <span class="tag">CSS Grid</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">Linux CLI</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-up" style="transition-delay:0.08s">
+        <span class="skill-icon">⚡</span>
+        <h3>JavaScript</h3>
+        <div class="skill-tags">
+          <span class="tag">ES6+</span>
+          <span class="tag">DOM Manipulation</span>
+          <span class="tag">Event Handling</span>
+          <span class="tag">Promises</span>
+          <span class="tag">Async / Await</span>
+          <span class="tag">Fetch API</span>
+          <span class="tag">Array Methods</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-up" style="transition-delay:0.16s">
+        <span class="skill-icon">⚛️</span>
+        <h3>React (Introductory)</h3>
+        <div class="skill-tags">
+          <span class="tag violet">Components</span>
+          <span class="tag violet">Props &amp; State</span>
+          <span class="tag violet">Hooks (useState/useEffect)</span>
+          <span class="tag violet">JSX</span>
+          <span class="tag violet">Component Lifecycle</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-up" style="transition-delay:0.24s">
+        <span class="skill-icon">🖥️</span>
+        <h3>Back-End Development</h3>
+        <div class="skill-tags">
+          <span class="tag green">Node.js</span>
+          <span class="tag green">Express.js</span>
+          <span class="tag green">REST APIs</span>
+          <span class="tag green">Middleware</span>
+          <span class="tag green">Route Handling</span>
+          <span class="tag green">JSON</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-up" style="transition-delay:0.32s">
+        <span class="skill-icon">🗄️</span>
+        <h3>Database &amp; Data</h3>
+        <div class="skill-tags">
+          <span class="tag orange">MongoDB</span>
+          <span class="tag orange">Mongoose ODM</span>
+          <span class="tag orange">CRUD Operations</span>
+          <span class="tag orange">Schema Design</span>
+          <span class="tag orange">Data Modeling</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-up" style="transition-delay:0.40s">
+        <span class="skill-icon">🛠️</span>
+        <h3>Professional Practices</h3>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Branching</span>
+          <span class="tag">Pull Requests</span>
+          <span class="tag">Testing Basics</span>
+          <span class="tag">Deployment</span>
+          <span class="tag">Cloud Hosting</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <p class="section-label">What I've Built</p>
+    <h2 id="projects-heading" class="section-title">Featured <span class="highlight">Projects</span></h2>
+    <p class="section-subtitle">
+      Each project was built to solve a real problem — not just to check a curriculum box.
+    </p>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card fade-up" aria-label="Task Manager App project">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364)">📋</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">Full-Stack App</div>
+          <h3>Task Manager API &amp; UI</h3>
+          <p>
+            A CRUD task management application with a Node.js/Express REST API, MongoDB storage, and a vanilla JS
+            front-end. Includes authentication middleware and JSON-based data persistence.
+          </p>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="tag green">Node.js</span>
+              <span class="tag green">Express</span>
+              <span class="tag orange">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub repository">⌥</a>
+              <a href="#" class="icon-link" aria-label="Live demo">↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card fade-up" style="transition-delay:0.1s" aria-label="Weather Dashboard project">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#0f0c29,#302b63,#24243e)">🌦️</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">JavaScript / API Integration</div>
+          <h3>Weather Dashboard</h3>
+          <p>
+            A real-time weather app that consumes a public weather API using async/await and the Fetch API.
+            Dynamically renders data, handles errors gracefully, and supports city search with autocomplete.
+          </p>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Fetch API</span>
+              <span class="tag">CSS Grid</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub repository">⌥</a>
+              <a href="#" class="icon-link" aria-label="Live demo">↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card fade-up" style="transition-delay:0.2s" aria-label="React Notes App project">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">📝</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">React / Front-End</div>
+          <h3>React Notes App</h3>
+          <p>
+            A component-based notes application built with React. Demonstrates useState for local state management,
+            useEffect for data persistence with localStorage, and responsive styling.
+          </p>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="tag violet">React</span>
+              <span class="tag violet">Hooks</span>
+              <span class="tag">localStorage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub repository">⌥</a>
+              <a href="#" class="icon-link" aria-label="Live demo">↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card fade-up" style="transition-delay:0.3s" aria-label="E-Commerce Landing Page project">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#134e5e,#71b280)">🛒</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">HTML / CSS / JS</div>
+          <h3>Responsive E-Commerce Landing</h3>
+          <p>
+            A pixel-perfect, mobile-first product landing page built from scratch. Showcases advanced CSS Grid
+            layouts, CSS animations, and accessible markup — no frameworks used.
+          </p>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Vanilla JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub repository">⌥</a>
+              <a href="#" class="icon-link" aria-label="Live demo">↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card fade-up" style="transition-delay:0.4s" aria-label="Quiz App project">
+        <div class="project-img">
+          <div class="project-img-placeholder" style="background:linear-gradient(135deg,#360033,#0b8793)">🧠</div>
+        </div>
+        <div class="project-body">
+          <div class="project-type">DOM Manipulation</div>
+          <h3>Interactive Quiz Engine</h3>
+          <p>
+            A multi-step quiz application built with pure JavaScript. Demonstrates advanced DOM manipulation,
+            event delegation, timer logic, and dynamic score tracking without any libraries.
+          </p>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="tag">JavaScript</span>
+              <span class="tag">DOM API</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="GitHub repository">⌥</a>
+              <a href="#" class="icon-link" aria-label="Live demo">↗</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAPSTONE ===== -->
+<section id="capstone" aria-labelledby="capstone-heading">
+  <div class="container">
+    <p class="section-label">Group Capstone Project</p>
+    <h2 id="capstone-heading" class="section-title">Community <span class="highlight">Hub Platform</span></h2>
+    <p class="section-subtitle">
+      A real-world platform built to give Kenyan communities a direct line to action — developed collaboratively over the final weeks of the program.
+    </p>
+
+    <div class="capstone-hero fade-up">
+      <img src="assets/community-hub.png" alt="Community Hub Platform dashboard showing a map of Kenya with incident reports" class="capstone-img" loading="lazy" />
+
+      <div class="capstone-body">
+        <!-- Meta -->
+        <div class="capstone-meta">
+          <span class="meta-badge">👥 Group Project (4 developers)</span>
+          <span class="meta-badge">🗓️ 3-Week Sprint</span>
+          <span class="meta-badge">🇰🇪 Built for Kenya</span>
+          <span class="meta-badge">🚀 Full-Stack</span>
+        </div>
+
+        <!-- Problem + My Contributions -->
+        <div class="capstone-grid">
+          <div>
+            <div class="capstone-section-title">The Problem We Solved</div>
+            <p style="font-size:0.92rem;color:var(--grey);margin-bottom:1rem;">
+              Kenyan communities lack a centralized, accessible channel to report and track neighborhood issues.
+              Reports sent through informal channels (WhatsApp, phone calls) rarely reach the right authorities
+              and almost never get tracked or resolved.
+            </p>
+            <ul class="capstone-list" aria-label="Issues addressed by the platform">
+              <li>Theft &amp; insecurity incidents</li>
+              <li>Power outages affecting entire estates</li>
+              <li>Flash flooding and drainage failures</li>
+              <li>Damaged roads and infrastructure</li>
+              <li>Other community challenges needing visibility</li>
+            </ul>
+          </div>
+          <div>
+            <div class="capstone-section-title">My Contributions</div>
+            <ul class="capstone-list" aria-label="My specific contributions">
+              <li>Designed and built the incident report submission form with client-side validation</li>
+              <li>Developed the Express.js REST API endpoints for creating and fetching reports</li>
+              <li>Integrated the MongoDB schema using Mongoose with proper data modeling</li>
+              <li>Built the responsive report card UI components using CSS Grid</li>
+              <li>Managed Git branching strategy and led code review for front-end PRs</li>
+              <li>Deployed the application to a cloud hosting environment</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div style="margin-bottom:1.5rem;">
+          <div class="capstone-section-title">Technologies Used</div>
+          <div class="skill-tags" style="gap:0.5rem;flex-wrap:wrap;display:flex;">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Vanilla JS</span>
+            <span class="tag green">Node.js</span>
+            <span class="tag green">Express.js</span>
+            <span class="tag orange">MongoDB</span>
+            <span class="tag orange">Mongoose</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag violet">Cloud Deploy</span>
+          </div>
+        </div>
+
+        <!-- Impact -->
+        <div class="impact-banner">
+          <div class="impact-icon">🌍</div>
+          <div class="impact-text">
+            <strong>Real-World Impact Statement</strong>
+            <span>
+              The platform demonstrates how technology can bridge the gap between citizens and decision-makers.
+              By creating a transparent, searchable record of community issues, it gives local authorities data
+              they can act on — and gives residents proof that their reports exist.
+            </span>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1rem;margin-top:1.8rem;flex-wrap:wrap;">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="capstone-github">View on GitHub</a>
+          <a href="#contact" class="btn btn-outline" id="capstone-contact">Ask Me About This</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <p class="section-label">Get In Touch</p>
+    <h2 id="contact-heading" class="section-title">Let's <span class="highlight">Work Together</span></h2>
+    <p class="section-subtitle">
+      I'm actively looking for junior-to-mid developer roles. Whether you're a recruiter, a founder, or a fellow developer — I'd love to hear from you.
+    </p>
+
+    <div class="contact-grid">
+      <!-- Left -->
+      <div class="fade-up">
+        <p style="margin-bottom:0.5rem;font-size:0.95rem;">
+          I'm currently open to full-time, part-time, and contract opportunities.
+          Remote-friendly and based in Nairobi, Kenya.
+        </p>
+        <p style="font-size:0.95rem;">
+          If you're working on something interesting, need a developer who's
+          reliable, curious, and growth-oriented — let's talk.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:kelvinnagtia259@gmail.com" class="contact-link-item" id="contact-email" aria-label="Send email">
+            <div class="contact-link-icon">📧</div>
+            <div>
+              <div style="font-size:0.8rem;color:var(--grey);margin-bottom:0.15rem;">Email</div>
+              <div style="font-weight:600;font-size:0.95rem;">kelvinnagtia259@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://github.com/Ngatia259-dev" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-github" aria-label="GitHub profile">
+            <div class="contact-link-icon">🐙</div>
+            <div>
+              <div style="font-size:0.8rem;color:var(--grey);margin-bottom:0.15rem;">GitHub</div>
+              <div style="font-weight:600;font-size:0.95rem;">github.com/Ngatia259-dev</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/Ngatia259-dev" target="_blank" rel="noopener noreferrer" class="contact-link-item" id="contact-linkedin" aria-label="LinkedIn profile">
+            <div class="contact-link-icon">💼</div>
+            <div>
+              <div style="font-size:0.8rem;color:var(--grey);margin-bottom:0.15rem;">LinkedIn</div>
+              <div style="font-weight:600;font-size:0.95rem;">linkedin.com/in/Ngatia259-dev</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="fade-up" style="transition-delay:0.15s">
+        <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Jane Mwangi" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job opportunity / Collaboration / Question" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell me about the role or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="form-submit" style="width:100%;justify-content:center;">
+            Send Message ✉️
+          </button>
+          <div id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-logo">&lt;Ngatia259-dev /&gt;</span>
+      <p>Designed &amp; Built with ❤️ — Nairobi, Kenya 🇰🇪</p>
+      <p>© <span id="year"></span> Kelvin Ngatia. Open to opportunities.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
